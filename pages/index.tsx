@@ -10,7 +10,6 @@ export default function Home() {
       <title>
         nea project
       </title>
-      
       <body>
         <div>
           <header>
