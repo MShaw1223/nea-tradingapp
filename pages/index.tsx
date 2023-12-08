@@ -5,13 +5,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div style={{display: 'flex', }}>
-      <div style={{marginRight:'20px', marginTop:'200px'}}>
-        <select>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-      </div>
       <div style={{textAlign: 'center', fontSize:'50px', marginTop:'35px'}}>
         <head>
           <title>
@@ -22,6 +15,7 @@ export default function Home() {
           NEA project
         </header>
       </div>
+      
     </div>
   )
 }
