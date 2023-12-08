@@ -15,11 +15,11 @@ export default function Home() {
       <div style={{textAlign: 'center', fontSize:'50px', marginTop:'35px'}}>
         <head>
           <title>
-            nea project
+            NEA project
           </title>
         </head>
         <header>
-          nea project
+          NEA project
         </header>
       </div>
     </div>
