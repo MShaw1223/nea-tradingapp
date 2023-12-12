@@ -1,15 +1,29 @@
-import { Inter } from 'next/font/google'
-import { ComboboxDemo } from '@/components/ui/combobox'
-const inter = Inter({ subsets: ['latin'] })
+import { ComboboxEntryChoice, ComboboxAccountChoice } from '@/components/ui/combobox'
+
 //change the option values to the actual things
 export default function Home() {
   return (
-      <div className="flex justify-center space-x-2">
-        <div className='text-xl font-extrabold p-4'>
-          NEA project
-        </div>
-        <div className='p-4'>
-          <ComboboxDemo/>
+      <div>
+          <div className='flex justify-center text-xl font-extrabold p-4 bg-slate-100'>
+            NEA project
+          </div>
+        <div className="relative p-6">
+          <div className='static flex justify-center'>
+            <div className='p-6'>
+              <ComboboxAccountChoice/>
+            </div>
+            <div className='p-6'>
+              <ComboboxEntryChoice/>
+            </div>
+          </div>
+          <div>
+            <div>
+              insert a button here to submit entry based on choices 
+            </div>
+            <div>
+              insert text box / bar / area for data submission
+            </div>
+          </div>
         </div>
       </div>
   )
