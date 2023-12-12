@@ -1,5 +1,5 @@
 import { ComboboxEntryChoice, ComboboxAccountChoice } from '@/components/ui/combobox'
-
+import { ButtonOutline } from '@/components/ui/outline'
 //change the option values to the actual things
 export default function Home() {
   return (
@@ -16,15 +16,16 @@ export default function Home() {
               <ComboboxEntryChoice/>
             </div>
           </div>
-          <div>
-            <div>
-              insert a button here to submit entry based on choices 
-            </div>
+          <div className='static'>
             <div>
               insert text box / bar / area for data submission
+            </div>
+            <div className='p-3'>
+              <ButtonOutline/>
             </div>
           </div>
         </div>
       </div>
   )
 }
+
