@@ -4,8 +4,10 @@ import { InputWithButton } from '@/components/ui/withButton'
 export default function Home() {
   return (
     <div>
-      <div className='flex justify-center text-xl font-extrabold p-4 bg-slate-300'>
-        NEA project
+      <div className='static flex justify-center'>
+        <div className='flex justify-center text-xl font-extrabold p-4 bg-slate-200 w-40 border-double'>
+          NEA project
+        </div>
       </div>
       <div className="relative p-6">
         <div className='static flex justify-center'>
