@@ -1,4 +1,4 @@
-import { ClearButton } from '@/components/clearButton'
+import { ClearButton } from '@/components/ui/clearButton'
 import { ComboboxEntryChoice, ComboboxAccountChoice } from '@/components/ui/combobox'
 import { InputWithButton } from '@/components/ui/withButton'
 
