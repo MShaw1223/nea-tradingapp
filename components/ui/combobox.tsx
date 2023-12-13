@@ -58,9 +58,7 @@ export function ComboboxEntryChoice() {
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {value
-            ? choices.find((choice) => choice.value === value)?.label
-            : "Select Choice..."}
+          {value ? choices.find((choice) => choice.value === value)?.label : "Select Choice..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
@@ -93,7 +91,14 @@ export function ComboboxEntryChoice() {
     </Popover>
   )
 }
-const Accounts = [{value:"demoAcc", label:"Demo Account"}];
+const Accounts = [
+  {
+    value:"demoAcc", label:"Demo Account"
+  },
+  {
+    value:"otherDemo", label:"Demo Account 2"
+  }
+]
 
 export function ComboboxAccountChoice() {
   const [open, setOpen] = React.useState(false)
@@ -108,9 +113,7 @@ export function ComboboxAccountChoice() {
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {value
-            ? Accounts.find((Account) => Account.value === value)?.label
-            : "Select Account..."}
+          {value ? Accounts.find((Account) => Account.value === value)?.label : "Select Account..."}
           <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
