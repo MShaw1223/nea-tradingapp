@@ -5,6 +5,11 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
+        <head>
+          <title>
+            NEA Project
+          </title>
+        </head>
         <Main />
         <NextScript />
       </body>
