@@ -15,17 +15,8 @@ export default function Home() {
             <div className='p-6'>
               <ComboboxAccountChoice/>
             </div>
-          </div> entryPrice, stopLoss, takeProfit, riskRatio, currencyPair, tradeNotes
+          </div>
           <div className='static flex justify-center flex-col items-center'>
-            <div className='p-3'>
-              <TradeNotes/>
-            </div>
-            <div className='p-3'>
-              <EntryPrice/>
-            </div>
-            <div className='p-3'>
-              <StopLoss/>
-            </div>
             <div className='p-3'>
               <TakeProfit/>
             </div>
@@ -34,6 +25,15 @@ export default function Home() {
             </div>
             <div className='p-3'>
               <CurrencyPair/>
+            </div>
+            <div className='p-3'>
+              <EntryPrice/>
+            </div>
+            <div className='p-3'>
+              <TradeNotes/>
+            </div>
+            <div className='p-3'>
+              <StopLoss/>
             </div>
             <div className='p-3'>
               <SubmitButton/>

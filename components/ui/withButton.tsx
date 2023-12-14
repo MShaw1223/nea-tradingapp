@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input"
 export function EntryPrice() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Entry Price" />
       <Button type="reset">Clear</Button>
     </div>
   )
@@ -12,7 +12,7 @@ export function EntryPrice() {
 export function StopLoss() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Stop Loss" />
       <Button type="reset">Clear</Button>
     </div>
   )
@@ -20,7 +20,7 @@ export function StopLoss() {
 export function TakeProfit() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Take Profit" />
       <Button type="reset">Clear</Button>
     </div>
   )
@@ -28,7 +28,7 @@ export function TakeProfit() {
 export function RiskRatio() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Risk Ratio" />
       <Button type="reset">Clear</Button>
     </div>
   )
@@ -36,7 +36,7 @@ export function RiskRatio() {
 export function CurrencyPair() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Currency Pair" />
       <Button type="reset">Clear</Button>
     </div>
   )
@@ -44,7 +44,7 @@ export function CurrencyPair() {
 export function TradeNotes() {
   return (
     <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="entry" placeholder="Enter here" />
+      <Input type="entry" placeholder="Trade Notes" />
       <Button type="reset">Clear</Button>
     </div>
   )
