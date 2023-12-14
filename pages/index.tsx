@@ -1,5 +1,5 @@
-import { ComboboxEntryChoice, ComboboxAccountChoice } from '@/components/ui/combobox'
-import { InputWithButton } from '@/components/ui/withButton'
+import { ComboboxAccountChoice } from '@/components/ui/combobox'
+import { EntryPrice, StopLoss, TakeProfit, RiskRatio, CurrencyPair, TradeNotes, SubmitButton } from '@/components/ui/withButton'
 
 export default function Home() {
   return (
@@ -15,13 +15,28 @@ export default function Home() {
             <div className='p-6'>
               <ComboboxAccountChoice/>
             </div>
-            <div className='p-6'>
-              <ComboboxEntryChoice/>
-            </div>
-          </div>
-          <div className='static flex justify-center'>
+          </div> entryPrice, stopLoss, takeProfit, riskRatio, currencyPair, tradeNotes
+          <div className='static flex justify-center flex-col items-center'>
             <div className='p-3'>
-              <InputWithButton/>
+              <TradeNotes/>
+            </div>
+            <div className='p-3'>
+              <EntryPrice/>
+            </div>
+            <div className='p-3'>
+              <StopLoss/>
+            </div>
+            <div className='p-3'>
+              <TakeProfit/>
+            </div>
+            <div className='p-3'>
+              <RiskRatio/>
+            </div>
+            <div className='p-3'>
+              <CurrencyPair/>
+            </div>
+            <div className='p-3'>
+              <SubmitButton/>
             </div>
           </div>
         </div>
