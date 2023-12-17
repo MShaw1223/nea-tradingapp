@@ -1,4 +1,3 @@
-import { ComboboxAccountChoice } from '@/components/ui/combobox'
 import { EntryPrice, StopLoss, TakeProfit, RiskRatio, CurrencyPair, TradeNotes, SubmitButton } from '@/components/ui/withButton'
 
 export default function Home() {
