@@ -11,11 +11,6 @@ export default function Home() {
           </div>
         </div>
         <div className="relative p-6">
-          <div className='static flex justify-center'>
-            <div className='p-6'>
-              <ComboboxAccountChoice/>
-            </div>
-          </div>
           <div className='static flex justify-center flex-col items-center'>
             <div className='p-3'>
               <TakeProfit/>

@@ -1,13 +1,19 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next'
+// pages/api/hello_world.js
+import postgres from "postgres";
 
-type Data = {
-  name: string
-}
+let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD } = process.env;
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
+
+const conn = postgres({
+  host: PGHOST,
+  database: PGDATABASE,
+  username: PGUSER,
+  password: PGPASSWORD,
+  port: 5432,
+  ssl: "require",
+});
+
+function selectAll() {
+  return conn.query("SELECT * FROM hello_world");
 }
