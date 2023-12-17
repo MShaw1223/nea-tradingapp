@@ -1,18 +1,8 @@
 import { neon } from '@neondatabase/serverless';
 
-export async function getServerSideProps() {
-  const sql = neon(process.env.DATABASE_URL);
+const sql = neon('postgresql://millershaw61:VzhWL3b4RKux@ep-flat-recipe-34120548.eu-central-1.aws.neon.tech/project-database?sslmode=require');
 
-  const response = await sql`SELECT version()`;
-  console.log(response);
-  return { props: { data: response } };
-}
+const posts = await sql('SELECT * FROM posts');
 
-export default function Page({ data }) {
-    return (
-        <div>
-          <h1>Data from Neon Database</h1>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      );
-}
+// See https://neon.tech/docs/serverless/serverless-driver
+// for more information
